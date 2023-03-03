@@ -35,3 +35,21 @@ console.log(array2[2][0]); // 3
 //access function
 //another way array2[3]()
 console.log(array2[method()]); // A function
+
+
+
+//string array
+let stringArray1 = ["C++", "Java", "Python", "Java Script"];
+//copies "stringArray1" by reference
+let stringArray2 = stringArray1;
+
+//prints array
+console.log(stringArray1); // (4) ['C++', 'Java', 'Python', 'Java Script']
+//prints copy array
+console.log(stringArray2); // (4) ['C++', 'Java', 'Python', 'Java Script']
+
+//adds "Programming" as value for key "name"
+stringArray1.name = "Programming";
+
+//object as key
+console.log(stringArray1.name); // Programming
