@@ -36,7 +36,7 @@ console.log(array2[2][0]); // 3
 //another way array2[3]()
 console.log(array2[method()]); // A function
 
-
+////////////////////////////////////////////////////////////////////////////////////////////////
 
 //string array
 let stringArray1 = ["C++", "Java", "Python", "Java Script"];
