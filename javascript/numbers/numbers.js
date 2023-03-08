@@ -2,9 +2,11 @@
 let a = 5;
 //number with decimals
 let b = 5.5;
+let c = Number(25);
 
 console.log(a); // 5
 console.log(b); // 5.5
+console.log(c); // 25
 
 
 //number in exponent notation
