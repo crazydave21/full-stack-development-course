@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up!</title>
+    <style>
+        label {
+            
+            font-size: larger;
+           }
+
+        button {
+            width: 100px;
+            color: white;
+            background-color:blue;
+            font-size: large;
+            cursor: pointer;
+                       
+        }
+
+        button:hover{
+            
+            background-color: rgb(0, 0, 180);
+        }
+
+        form {
+            margin: 0 auto;
+            width: 250px;
+        }
+
+        input{
+            font-size: larger;
+        }
+
+
+
+    </style>
+
+    <script>
+        function getData()
+        {
+            var fName = document.getElementById('fn').value;
+            var lName = document.getElementById('ln').value;
+            var eMail = document.getElementById('emid').value;
+
+            alert('First Name: '+fName + ' Last Name: ' +lName + ' Email ID: ' +eMail);
+        }
+    </script>
+</head>
+<body>
+    <h1 style="text-align:center;">Practice Login/sign up form</h1>
+    
+    <form action="">
+        <label for="First Name"> First Name</label>
+        <input type="text" name="fname" id="fn" title="Enter Fist Name"><br><br>
+        <label for="Last Name">Last Name</label>
+        <input type="text" name="lname" id="ln" title="Enter Last Name"><br><br>
+        <label for="Email">Email ID</label>
+        <input type="email" name="email" id="emid" title="Enter Email ID"><br><br>
+        <button title="Click to Submit" onclick="getData()">Submit</button>
+    </form>
+
+</body>
+</html>
