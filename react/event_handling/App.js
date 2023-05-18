@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class Button extends Component {
+class Button1 extends Component {
     action(e) {
         e.preventDefault()
         console.log("Submit1", this)
@@ -17,7 +17,7 @@ class Button extends Component {
     }
 }
 
-export default class App extends Component {
+class Button2 extends Component {
     action(e) {
         e.preventDefault()
         console.log("Submit2", this)
@@ -26,9 +26,27 @@ export default class App extends Component {
     render() {
         return(
             <div>
-                <Button/>
-                <form onSubmit={(e) => this.action(e)}>
+                <form onSubmit={this.action.bind(this)}>
                 <button>Submit2</button>
+                </form>
+            </div>
+        )
+    }
+}
+
+export default class App extends Component {
+    action(e) {
+        e.preventDefault()
+        console.log("Submit3", this)
+    }
+
+    render() {
+        return(
+            <div>
+                <Button1/>
+                <Button2/>
+                <form onSubmit={(e) => this.action(e)}>
+                <button>Submit3</button>
                 </form>
             </div>
         )
