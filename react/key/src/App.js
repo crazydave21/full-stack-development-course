@@ -9,7 +9,12 @@ function App() {
   const list = numbers.map((number) => (
     <Component key={number.toString()} value={number} />
   ));
-  return <ul>{list}</ul>;
+  return (
+    <div>
+      <h2 style={{ margin: "5px" }}>List and key</h2>
+      <ul>{list}</ul>
+    </div>
+  );
 }
 
 export default App;
